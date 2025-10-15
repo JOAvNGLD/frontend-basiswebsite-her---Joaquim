@@ -1,0 +1,229 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+
+* {
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+  }
+
+.black-background-text {
+  background-color: black;
+  color: white;
+}
+
+article.main-article h2{
+background-color: black;
+border-style: solid;
+color: white;
+}
+
+button {
+  margin-top: 1em;
+  padding: 0.8em 2em;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-style: solid;
+}
+
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: medium;
+  font-weight: bold;
+}
+
+/****************/
+/* NAV STYLING  */
+/****************/
+
+nav:first-of-type {
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0px;
+
+}
+
+nav div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div a {
+font-size: 35px; font-weight: 600; color: white;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li a {
+  color: white;
+  font-size: 18px; font-weight: bold;
+  margin-right: 25px;
+}
+
+article p {
+  font-weight: lighter;
+}
+
+
+/**********************/
+/*   S x C STYLING    */
+/**********************/
+
+section:first-of-type{
+  position: relative;
+}
+
+section:first-of-type img:first-of-type {
+  width: 120%;        
+  max-width: none;    
+  height: 500px;      
+  object-fit: cover;  
+  object-position: center;
+  display: block;
+  margin-left: -10%;
+  border-radius: 1em;
+}
+
+section:first-of-type h2:first-of-type {
+  color: black;
+  background-color: white;
+  position: absolute;
+  bottom: 3em;
+}
+
+section:first-of-type p:first-of-type {
+  color: black;
+  background-color: white;
+  position: absolute;
+  bottom: 3em;
+  font-weight: bold;
+}
+
+
+/**********************/
+/*   COVERS STYLING   */
+/**********************/
+
+section:nth-of-type(2) {
+  border-style: solid; border-width: 0.01em;
+  padding: 1.5em;
+}
+
+/**********************/
+/* ARTICLE STYLING */
+/**********************/
+
+body article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 6em 1em;
+}
+
+body article:first-of-type {
+  align-items: center;
+  margin-top: 8em;
+}
+
+body article:first-of-type img {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 1em;
+}
+
+body article:first-of-type h2 {
+  margin-top: 1em;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+
+body article:nth-of-type(n+2):nth-of-type(-n+7) {
+  margin: 2em 1em;
+  gap: 0.5em;
+}
+
+
+body article:nth-of-type(n+2):nth-of-type(-n+7) img {
+  width: 100%;
+  border-radius: 0.3em;
+}
+
+
+body article:nth-of-type(n+2):nth-of-type(-n+7) p {
+
+
+  margin: 0.3em 0 0.3em 0;
+  font-size: 0.9em;
+  color: #666;
+  text-align: left; 
+}
+
+
+body article:nth-of-type(n+2):nth-of-type(-n+7) h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  text-align: left; 
+}
+
+
+/**********************/
+/* FOOTER STYLING */
+/**********************/
+
+
+
+  footer {
+    border-style: solid;
+    background-color: black;
+    color: white;
+    position: relative;
+    text-align: center;
+    
+  }
